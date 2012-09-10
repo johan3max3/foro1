@@ -6,6 +6,9 @@ describe Roman do
     @roman = Roman.new
   end
 
+  it 'should convert 18 to XVIII' do    
+    @roman.convert(18).must_equal "XVIII" #assert
+  end
 
   it 'should convert 17 to XVII' do    
     @roman.convert(17).must_equal "XVII" #assert
