@@ -6,6 +6,11 @@ describe Roman do
     @roman = Roman.new
   end
 
+  it 'should convert 6 to VI' do    
+    @roman.convert(6).must_equal "VI" #assert
+  end
+  
+  
   it 'should convert 5 to V' do    
     @roman.convert(5).must_equal "V" #assert
   end
